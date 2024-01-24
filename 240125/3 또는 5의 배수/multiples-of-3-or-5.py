@@ -5,7 +5,7 @@ if a %3 == 0:
 else:
     print('NO')
 
-if  a % 5:
+if  a % 5 == 0:
     print('YES')
 else:
     print('NO')
