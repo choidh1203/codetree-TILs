@@ -1,5 +1,6 @@
 n = int(input())
 
 for i in range(n):
-    if i%2 == 1 and i%3 ==0:
-        print(i)
+    a = int(input())
+    if a%2 == 1 and a%3 ==0:
+        print(a)
