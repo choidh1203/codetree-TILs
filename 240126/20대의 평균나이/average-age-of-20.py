@@ -10,4 +10,4 @@ while True:
         break
 
 avg = avg/n
-print("{0:.2f}.format(avg)")
+print("{0:.2f}".format(avg))
