@@ -2,9 +2,9 @@ n = int(input())
 d = 1
 
 while True:
-    if n/d <= 1:
+    if n//d <= 1:
         break
-    n = n/d
+    n = n//d
     d += 1
     
 
