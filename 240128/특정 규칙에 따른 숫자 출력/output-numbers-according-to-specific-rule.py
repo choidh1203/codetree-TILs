@@ -1,8 +1,12 @@
-cnt = 1
+cnt = 0
 n = int(input())
 for i in range(n):
     for j in range(n):
-        if j <= i:
+        
+        if j >= i:
+            cnt += 1
+            if cnt == 10:
+                cnt = 1
             print(cnt, end =" ")
         else:
             print(" ", end = " ")
