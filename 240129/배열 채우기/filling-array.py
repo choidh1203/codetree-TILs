@@ -1,9 +1,11 @@
-arr = list(map(int,input().split()))
+li = []
+for i in range(10):
+    n = int(input())
+    if n != 0:
+        li.append(n)
+    else:
+        break
 
-if 0 in arr:
-    arr.remove(0)
-
-arr.reverse()
-
-for i in arr:
-    print(i,end = " ")
+li.reverse()
+for i in li:
+    print(i, end =" ")
