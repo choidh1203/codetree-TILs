@@ -3,10 +3,13 @@ n1, n2 = map(int,input().split())
 a = list(map(int,input().split()))
 b = list(map(int,input().split()))
 
+check = False
+
 for i in range(n1 - n2 + 1):
     if a[i:i+n2] == b:
-        print("Yes")
+        check =True
         break
-    else:
-        print("No")
-        break
+if check:
+    print("Yes")
+else:
+    print("No")
