@@ -1,6 +1,6 @@
 n = int(input())
 arr = list(map(int,input().split()))
-max_num = max(new)
+max_num = max(arr)
 new = [0]*(max_num+1)
 
 for i in arr:
