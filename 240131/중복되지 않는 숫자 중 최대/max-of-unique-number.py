@@ -11,4 +11,7 @@ new2 =[]
 for i in range(n+1):
     if new[i] == 1:
         new2.append(i)
-print(max(new2))
+if new2 == []:
+    print(-1)
+else:
+    print(max(new2))
