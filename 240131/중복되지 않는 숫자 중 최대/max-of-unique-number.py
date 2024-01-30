@@ -8,7 +8,7 @@ for i in arr:
     new[i] += 1
 
 new2 =[]
-for i in range(n+1):
+for i in range(n):
     if new[i] == 1:
         new2.append(i)
 if new2 == []:
