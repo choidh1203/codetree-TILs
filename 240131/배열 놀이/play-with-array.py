@@ -14,3 +14,4 @@ for i in range(q):
     elif li[0] == 3:
         for j in range(li[1]-1,li[2]):
             print(arr[j],end =" ")
+print()
