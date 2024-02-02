@@ -1,8 +1,8 @@
 a, b = input().split()
 
-if a > b:
+if len(a) > len(b):
     print(a, len(a))
-elif a =b:
+elif len(a) == len(b):
     print('same')
 else:
     print(b, len(b))
