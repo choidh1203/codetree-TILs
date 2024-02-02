@@ -5,4 +5,4 @@ for i in range(4):
     arr.append(a)
 
 for i in range(3,-1,-1):
-    print(i)
+    print(arr[i])
