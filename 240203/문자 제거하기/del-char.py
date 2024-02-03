@@ -7,4 +7,4 @@ for i in range(len(s)-1):
     else:
         s.pop(n)
 
-    print(s)
+    print("".join(s))
