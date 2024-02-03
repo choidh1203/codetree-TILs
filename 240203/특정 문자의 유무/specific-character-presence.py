@@ -3,10 +3,10 @@ ab = "No"
 
 a = input()
 
-if ee in a:
+if 'ee' in a:
     ee = "Yes"
 
-if ab in a:
+if 'ab' in a:
     ab ="Yes"
 
 print(ee, ab)
