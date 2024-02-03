@@ -2,5 +2,9 @@ s = list(input())
 
 for i in range(len(s)-1):
     n = int(input())
-    s.pop(n)
+    if len(s) < n:
+        s.pop(-1)
+    else:
+        s.pop(n)
+
     print(s)
