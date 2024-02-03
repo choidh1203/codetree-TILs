@@ -10,7 +10,7 @@ for i in range(1,len(string)):
         char.append(string[i])
         idx.append(1)
 
-print(len(char)+len(''.join(str(e) for e in char)))
+print(len(char)+len(''.join(str(e) for e in idx)))
 
 for i in range(len(char)):
     print(char[i]+str(idx[i]),end="")
