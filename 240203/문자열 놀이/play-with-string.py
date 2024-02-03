@@ -12,4 +12,5 @@ for i in range(int(q)):
         s = "".join(new)
         print(s)
     elif n == 2:
-        print(s.replace(a,b))
+        s = s.replace(a,b)
+        print(s)
