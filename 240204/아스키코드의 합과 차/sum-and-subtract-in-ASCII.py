@@ -1,3 +1,3 @@
 o, r = input().split()
 
-print(ord(o),ord(r))
+print(ord(o)+ord(r),abs(ord(o)-ord(r)))
