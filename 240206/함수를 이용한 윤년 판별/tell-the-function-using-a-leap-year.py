@@ -7,6 +7,8 @@ def year(n):
                 print('false')
         else:
             print('true')
+    else:
+        print('true')
 
 y = int(input())
 
