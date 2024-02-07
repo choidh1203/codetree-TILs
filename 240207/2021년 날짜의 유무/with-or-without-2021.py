@@ -1,7 +1,7 @@
 def date(m,d):
     if 1<= m <= 12:
         if m == 2:
-            if 1<= d < = 28:
+            if 1<= d <= 28:
                 print('Yes')
             else:
                 print('No')
