@@ -15,6 +15,8 @@ def main(a,b):
         times(a,b)
     elif '/' == o:
         divide(a,b)
+    else:
+        print('False')
 
 a,o,c = map(str,input().split())
 a = int(a) ; c = int(c)
