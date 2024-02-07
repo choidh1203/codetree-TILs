@@ -5,7 +5,7 @@ def minus(a,b):
 def times(a,b):
     print(f"{a} * {b} = {a*b}")
 def divide(a,b):
-    print(f"{a} / {b} = {a/b}")
+    print(f"{a} / {b} = {a//b}")
 def main(a,b):
     if '+' == o:
         add(a,b)
