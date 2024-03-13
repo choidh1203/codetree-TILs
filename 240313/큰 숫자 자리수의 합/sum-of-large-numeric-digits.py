@@ -1,14 +1,9 @@
-a = list(map(int,input().split()))
-hap = 1
-for num in a:
-    hap *= num
-hap = str(hap)
-_len = len(hap)
+a, b, c = map(int,input().split())
 
-def num_hap(n):
-    if n == _len-1:
-        return int(hap[n])
+def hap(n):
+    if n < 10:
+        return n
+    
+    return hap(n//10) + n % 10
 
-    return int(hap[n]) + num_hap(n+1) 
-
-print(num_hap(0))
+print(hap(a*b*c))
