@@ -11,9 +11,9 @@ def lcm(a, b):
     return abs(a*b)//gcd(a, b)
 
 def expanded_lcm(numbers):
-    if len(numbers) == 2:
-        return lcm(numbers[0], numbers[1])
-    else:
-        return lcm(numbers[0], expanded_lcm(numbers[1:]))
+    fin_lcm = numbers[0]
+    for i in numbers[1:]:
+        fin_lcm = lcm(fin_lcm, i)
+    return fin_lcm
 
 print(expanded_lcm(b))
