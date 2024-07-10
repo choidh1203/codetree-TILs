@@ -7,7 +7,7 @@ words = [input() for i in range(n)]
 fin = []
 
 for word in words:
-    if t in word:
+    if t == word[:len(t)]:
         fin.append(word)
     else:
         pass
