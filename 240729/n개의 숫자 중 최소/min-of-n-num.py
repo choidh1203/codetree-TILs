@@ -5,11 +5,13 @@ arr = list(map(int, input().split()))
 
 min_val = sys.maxsize
 
-idx = 0
+cnt = 0
 
 for i in range(n):
     if min_val > arr[i]:
         min_val = arr[i]
-        idx = i
+        cnt = 1
+    elif min_val == arr[i]:
+        cnt += 1
 
-print(min_val, idx)
+print(min_val, cnt)
