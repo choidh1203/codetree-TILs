@@ -1,20 +1,17 @@
 class student:
-    def __init__(self, h, w, idx=0):
+    def __init__(self, h, w, i):
         self.h = h
         self.w = w
-        self.idx = 0
+        self.i = i
 
 n = int(input())
 students = []
 
-for _ in range(n):
+for i in range(1,n+1):
     h, w = tuple(map(int, input().split()))
-    students.append(student(h,w))
+    students.append(student(h,w,i))
 
-for idx, student in enumerate(students, start = 1):
-    student.idx = idx
-
-students.sort(key = lambda x: (-x.h,-x.w,x.idx))
+students.sort(key = lambda x: (-x.h,-x.w,x.i))
 
 for student in students:
-    print(student.h, student.w, student.idx)
+    print(student.h, student.w, student.i)
