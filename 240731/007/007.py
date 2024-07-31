@@ -8,7 +8,7 @@ class spy:
 
 a = spy(code, loc, time)
 
-print(f"""secret code : {code}
-meeting point : {loc}
-time : {time}
+print(f"""secret code : {a.code}
+meeting point : {a.loc}
+time : {a.time}
 """)
