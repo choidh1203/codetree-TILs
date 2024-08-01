@@ -8,7 +8,7 @@ code, color, sec = input().split()
 
 bomb1 = bomb(code, color, sec)
 
-print(f""""code : {bomb1.code}
+print(f"""code : {bomb1.code}
 color : {bomb1.color}
 second : {bomb1.sec}
 """)
