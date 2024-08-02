@@ -7,6 +7,10 @@ m = 11
 ans = 0
 
 while True:
+    if a < d and b < h and c < m:
+        ans = -1
+        break
+
     if d == a and h == b and m == c:
         break
 
