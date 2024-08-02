@@ -1,10 +1,13 @@
 n = int(input())
 
-gang = [0] * 200
+arr = [0] * 201
 
-lines = [list(map(int,input().split())) for i in range(n)]
+offset = 100
 
-for line in lines:
-    for i in range(line[0]+100,line[1]+100):
-        gang[i] += 1    
-print(max(gang))
+for _ in range(n):
+    s, e = tuple(map(int, input().split()))
+
+    for i in range(s+offset, e+offset):
+        arr[i] += 1
+
+print(max(arr))
