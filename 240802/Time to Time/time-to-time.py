@@ -1,6 +1,13 @@
-def cal_min(h,m):
-    return 60*h + m
-
 a,b,c,d = tuple(map(int, input().split()))
 
-print(cal_min(c,d) - cal_min(a,b))
+ans = 0
+while True:
+    if a == c and b == d:
+        break
+    ans+=1
+    b+=1
+    if b == 60:
+        a += 1
+        b = 0
+
+print(ans)
