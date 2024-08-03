@@ -16,24 +16,27 @@ for y in range(b_y1+offset, b_y2+offset):
         arr[y][x] = 0 
 
 #min_x, min_y, max_x, max_y 구하기
-max_x, max_y = 0, 0
-min_x, min_y = 2000, 2000
+if  b_x1 <= a_x1 and a_x2 <= b_x2 and b_y1 <= a_y1 and a_y2 <= b_y2:
+    print(0)
+else:
+    max_x, max_y = 0, 0
+    min_x, min_y = 2000, 2000
 
-for y in range(a_y1+offset, a_y2+offset):
-    for x in range(a_x1+offset, a_x2+offset):
-        if arr[y][x] == 1:
-            if x <= min_x:
-                min_x = x
-            
-            if y <= min_y:
-                min_y = y
+    for y in range(a_y1+offset, a_y2+offset):
+        for x in range(a_x1+offset, a_x2+offset):
+            if arr[y][x] == 1:
+                if x <= min_x:
+                    min_x = x
+                
+                if y <= min_y:
+                    min_y = y
 
-            if x > max_x:
-                max_x = x
-            
-            if y > max_y:
-                max_y = y
-        else:
-            pass
+                if x > max_x:
+                    max_x = x
+                
+                if y > max_y:
+                    max_y = y
+            else:
+                pass
 
-print((max_x+1-min_x)*(max_y+1-min_y))
+    print((max_x+1-min_x)*(max_y+1-min_y))
