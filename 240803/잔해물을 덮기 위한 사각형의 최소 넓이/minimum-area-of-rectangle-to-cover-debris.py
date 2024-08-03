@@ -33,5 +33,7 @@ for y in range(a_y1+offset, a_y2+offset):
             
             if y > max_y:
                 max_y = y
+        else:
+            pass
 
 print((max_x+1-min_x)*(max_y+1-min_y))
