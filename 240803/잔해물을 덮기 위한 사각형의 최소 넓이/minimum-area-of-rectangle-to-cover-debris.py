@@ -21,16 +21,17 @@ min_x, min_y = 2000, 2000
 
 for y in range(a_y1+offset, a_y2+offset):
     for x in range(a_x1+offset, a_x2+offset):
-        if x <= min_x:
-            min_x = x
-        
-        if y <= min_y:
-            min_y = y
+        if arr[y][x] == 1:
+            if x <= min_x:
+                min_x = x
+            
+            if y <= min_y:
+                min_y = y
 
-        if x > max_x:
-            max_x = x
-        
-        if y > max_y:
-            max_y = y
+            if x > max_x:
+                max_x = x
+            
+            if y > max_y:
+                max_y = y
 
 print((max_x+1-min_x)*(max_y+1-min_y))
