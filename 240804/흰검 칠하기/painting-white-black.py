@@ -1,8 +1,8 @@
 n = int(input())
 
-arr = [[0] for _ in range(11)]
+arr = [[0] for _ in range(100001)]
 
-loc = 5
+loc = 50000
 
 for _ in range(n):
     x, d = tuple(input().split())
@@ -17,7 +17,7 @@ for _ in range(n):
             arr[i].append(1)
         loc = loc-x+1
 
-for i in range(11):
+for i in range(100001):
     if arr[i].count(1) >= 2 and arr[i].count(2) >= 2:
         arr[i] = 3
     else:
