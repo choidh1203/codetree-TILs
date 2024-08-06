@@ -1,11 +1,11 @@
 a, b = map(int,input().split())
 c, d= map(int,input().split())
 
-if b > d:
+if a > c:
     print('A')
-elif d > b:
+elif c > a:
     print('B')
-elif a > c:
+elif b > d:
     print('A')
 else:
     print('B')
