@@ -1,6 +1,3 @@
 a = int(input())
 
-if a == 100:
-    print('pass')
-else:
-    print('failure')
+print('pass' if a == 100 else "failure")
