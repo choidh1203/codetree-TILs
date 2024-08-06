@@ -23,4 +23,4 @@ while s < t:
         move = 3 - move
         s += 1
 
-print(y,x)
+print(y+1,x+1)
