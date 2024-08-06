@@ -30,7 +30,11 @@ for i in range(m):
 
         log_b.append(bx)
 
+idx = 0
+
 for k in range(1,len(log_a)):
     if log_a[k] == log_b[k]:
-        print(k)
+        idx  = k
         break
+
+print(-1 if idx == 0 else idx)
