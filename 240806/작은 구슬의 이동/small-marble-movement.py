@@ -17,4 +17,4 @@ for _ in range(t):
     else:
         move = 3 - move
 
-print(y+1,x+1)
+print(y,x)
