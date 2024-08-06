@@ -3,10 +3,10 @@ dx, dy = [1, 0, 0, -1], [0, 1, -1, 0]
 n, t = map(int,input().split())
 
 def in_range(x,y,n):
-    return 0 <= x and x < n and 0 <= y and y < n
+    return 1 <= x and x <= n and 1 <= y and y <= n
 
 y,x, d = input().split()
-y, x = int(y)-1, int(x)-1
+y, x = int(y), int(x)
 
 move = di[d]
 
