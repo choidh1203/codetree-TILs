@@ -2,6 +2,7 @@ dir_num = 3
 x, y = 0, 0
 dx, dy = [1, 0, -1, 0], [0, -1, 0, 1]
 t= 0
+ans = False
 
 cmd = input()
 
